@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body,
+html,
+#root {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    background-color: #559b9b;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #559b9b;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.form-container {
+    background-color: #559b9b;
+    padding: 2rem;
+    width: 350px;
+    max-width: 100vw;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-link {
+    text-decoration: underline;
+    cursor: default;
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.btn-black,
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 0;
+    margin: 5px 2px;
+    cursor: pointer;
+    width: 32%;
+    font-weight: 500;
+    border-radius: 2px;
+    font-size: 0.875rem;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease;
+}
+
+.btn-black:hover {
+    background-color: #333;
+}
+
+.btn-white {
+    background-color: white;
+    color: #559b9b;
+    border: none;
+    padding: 8px 0;
+    margin: 5px 2px;
+    cursor: pointer;
+    width: 32%;
+    font-weight: 500;
+    border-radius: 2px;
+    font-size: 0.875rem;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease;
+}
+
+.btn-white:hover {
+    background-color: #e6e6e6;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    color: white;
+    text-align: left;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.info-box b {
+    font-weight: 700;
+}
+
+.info-message {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    font-weight: 600;
+}
+
+.dashboard .user-cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.user-card {
+    background: #114040;
+    color: white;
+    border-radius: 7px;
+    padding: 12px 10px;
+    width: 110px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-avatar {
+    background: #e5534b;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 50px;
+}
+
+.user-info {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ddd;
+}
+
+@media screen and (max-width: 400px) {
+    .form-container {
+        width: 100%;
+    }
+    .nav-buttons button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .nav-buttons {
+        flex-direction: column;
+    }
+    .dashboard .user-cards {
+        flex-direction: column;
+    }
+}
